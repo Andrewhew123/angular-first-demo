@@ -1,0 +1,37 @@
+<!-------------------- Angular Lesson 4 (Data Binding) -------------------->
+
+<!---------- DATA BINDING ---------->
+
+<!-- DATA BINDING ver 1: Display any key details -->
+<input type="text" (keyup) = "onKeyup($event)">
+<br /><br />
+
+<!-- DATA BINDING ver 2: Display input string when enter key is triggered -->
+<input type="text" (keyup.enter) = "onKeyup2($event)">
+<br /><br />
+
+<!-- DATA BINDING ver 3: Display username input when enter key is triggered -->
+<input type="text" (keyup.enter) = "onKeyup3(username.value)" #username >
+<br /><br />
+
+<!-- DATA BINDING ver 4: Data Binding with userName input -->
+<input type="text" [(ngModel)] = "userName" (keyup.enter) = "onKeyup4()">
+<br /><br />
+
+<!---------- ONE WAY DATA BINDING (Only can set data from component to view) ---------->
+
+<!--<input type="text" value="one way data binding">-->
+
+<!-- One way binding with value input -->
+<input type="text" [value]='textValue' (keyup.enter) = "onKeyup5()">
+<br /><br />
+
+
+<!---------- TWO WAY DATA BINDING (Can pass the data from component to view and modify data) ---------->
+
+<!-- Two way binding with value input -->
+<input type="text" [(ngModel)]='textValue' (keyup.enter) = "onKeyup5()">
+<br /><br />
+
+
+<hr /><br /><br />

@@ -1,0 +1,39 @@
+<!---------- Default ngStyle ---------->
+
+<!-- Set the condition, if bool is true then red, else is blue -->
+<h1 [style.color] = "bool ? 'red' : 'blue' ">Style Binding</h1>
+
+<!-- Set the condition, if isActive  is true then red & uppercase, else is black & lowercase -->
+<h3 [style.color] = "isActive ? 'red' : 'black'" 
+[style.textTransform] = "isActive ? 'uppercase' : 'lowercase'">Angular Udemy Course</h3>
+
+
+<!---------- NgStyle Directive (Shortcut) ---------->
+
+<h1 [ngStyle] = "{
+    color: isActive ? 'red' : 'black',
+    textTransform: isActive ? 'uppercase' : 'lowercase'
+}">NgStyle Directive</h1>
+
+
+<!---------- Default NgClass ---------->
+
+<!-- Set default class to style -->
+<h1 [class.text-red] = "bool">Angular App</h1>
+
+<h1 
+[class.main] = "isActive"
+[class.text-weight] = "isActive"
+
+>NgStyle Directive</h1>
+
+<!---------- NgClass Directive (Shortcut) ---------->
+<h1
+[ngClass] = "{
+    'main' : isActive,
+    'text-weight' : isActive
+}"
+>ngClass Directive</h1>
+
+
+<hr /><br /><br />
