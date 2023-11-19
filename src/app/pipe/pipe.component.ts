@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class PipeComponent {
 
   title: string = "Angular Course"
+  count: number = 285645;
+  dcValue: number = 3.4657
 
   constructor() {}
 }
